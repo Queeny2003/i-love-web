@@ -58,6 +58,9 @@ h1 {
   text-shadow: 3px 3px 0 var(--donker);
 }
 
+.header-plaatje{
+  text-align: right;
+}
 /* Menu: op mobiel 2 knoppen per rij */
 
 .menu {
@@ -151,10 +154,21 @@ em {
 /* Footer */
 
 .footer {
-  text-align: center;
+  text-align: rights;
   padding: 12px;
   background-color: var(--roze);
   border-top: 3px solid var(--donker);
+}
+
+.footer-plaatjes {
+  display: flex;
+  gap: 10px;
+  justify-content: right;
+}
+
+.footer-plaatjes img {
+  width: 40px;
+  height: auto;
 }
 
 /* ===== Tablet: vanaf 700px ===== */
