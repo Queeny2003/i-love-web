@@ -1,4 +1,4 @@
-/* ===== Kleuren ===== */ 
+/* ===== Kleuren ===== */
 
 :root {
   --roze: #f9c6e0;
@@ -58,9 +58,10 @@ h1 {
   text-shadow: 3px 3px 0 var(--donker);
 }
 
-.header-plaatje{
+.header-plaatje {
   text-align: right;
 }
+
 /* Menu: op mobiel 2 knoppen per rij */
 
 .menu {
@@ -84,13 +85,26 @@ h1 {
   color: var(--donker);
 }
 
+/* Main: ruimte rondom de tekst */
+
+main {
+  padding: 12px;
+}
+
+main h1 {
+  margin-bottom: 16px;
+}
+
+main h2 {
+  margin: 20px 0 8px;
+}
+
 /* Kolommen: op mobiel onder elkaar */
 
 .kolommen {
   display: grid;
   grid-template-columns: 1fr;
   gap: 12px;
-  padding: 12px;
 }
 
 /* Widgets */
@@ -112,6 +126,24 @@ h1 {
 
 .widget-inhoud {
   padding: 12px;
+}
+
+/* Uitklapblokken (details en summary) */
+
+details {
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  border: 3px solid var(--donker);
+  box-shadow: 4px 4px 0 var(--paars);
+}
+
+summary {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+details[open] summary {
+  margin-bottom: 12px;
 }
 
 /* Tekst */
@@ -144,17 +176,13 @@ a:hover {
 }
 
 em {
-  margin: 0 0 4px;
-  height: auto;
   color: var(--donker);
-  
-
 }
 
 /* Footer */
 
 .footer {
-  text-align: rights;
+  text-align: right;
   padding: 12px;
   background-color: var(--roze);
   border-top: 3px solid var(--donker);
@@ -163,7 +191,7 @@ em {
 .footer-plaatjes {
   display: flex;
   gap: 10px;
-  justify-content: right;
+  justify-content: flex-end;
 }
 
 .footer-plaatjes img {
@@ -199,13 +227,14 @@ em {
 }
 
 /* ===== Desktop: vanaf 900px ===== */
+
 @media (min-width: 900px) {
+  main {
+    padding: 16px;
+  }
+
   .kolommen {
     grid-template-columns: 1fr 2fr 1fr;
     gap: 16px;
-    padding: 16px;
   }
 }
-
-
-
